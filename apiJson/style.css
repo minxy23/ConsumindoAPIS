@@ -13,7 +13,7 @@ body{
     align-items: center;
 
     background-image: url(img/fundo-geral.jpg);
-    background-size: 1350px;
+/*     background-size: 1350px; */
     background-attachment: fixed;
 }
 
