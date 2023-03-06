@@ -1,0 +1,27 @@
+{
+    
+    "imagemUm": "<img src='img/unchartedUm.jpg' width='100px'>",
+
+    "nameUm": "UNCHARTED 2 - Among Thieves",
+    
+    "desenvolvedoraUm": "Naughty Dog",
+
+    "priceUm": "R$ 49,00",
+
+    "imagemDois": "<img src='img/unchartedDois.jpg' width='100px'>",
+
+    "nameDois": "UNCHARTED 3 - Drake's Deception",
+    
+    "desenvolvedoraDois": "Naughty Dog",
+
+    "priceDois": "R$ 78,88",
+
+    "imagemTres": "<img src='img/unchartedTres.jpg' width='100px'>",
+
+    "nameTres": "UNCHARTED 4 - A Thief's End",
+    
+    "desenvolvedoraTres": "Naughty Dog",
+
+    "priceTres": "R$ 99,50"
+
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(img/fundo-geral.jpg);
+    background-size: 1350px;
+    background-attachment: fixed;
+}
+
+h1{
+    padding: 5px;
+    margin: 5px;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+
+    color: rgba(255, 255, 255, 0.849);
+}
+
+#primeiro-jogo, #segundo-jogo, #terceiro-jogo{
+    margin: 10px;
+    padding: 10px;
+
+    border: solid black 1px;
+
+    width: 280px;
+
+    
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+    color: white;
+    font-size: medium;
+
+    background-color: rgba(48, 47, 46, 0.678);
+}
+
+#primeiro-jogo{
+    background-image: url(img/fundo3.jpg); 
+    background-size: 300px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+#segundo-jogo{
+    background-image: url(img/fundo.jpg); 
+    background-size: 300px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+#terceiro-jogo{
+    background-image: url(img/fundo2.jpg); 
+    background-size: 300px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+button{
+    border-radius: 20px;
+    margin: 3px;
+    padding: 9px;
+    border: 1px solid whitesmoke;
+
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 15px;
+
+    background-color:  rgba(48, 47, 46, 0.678);
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color:  rgba(48, 47, 46, 0.897);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API's</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER COM NOME E BOTÕES COM LINKS PARA OUTRAS APIS -->
+    <header>
+        <a href="#" class="logo"> YASMIN NASCIMENTO </a>
+        <ul>
+            <li><a href="apiFake/index.html">API FAKE</a></li>
+            <li><a href="apiJson/index.html">API JSON</a></li>
+            <li><a href="apiDolar/index.html">API DÓLAR</a></li>
+            <li><a href="apiCep/index.html">API CEP</a></li>
+            <li><a href="apiClimas/index.html">API CLIMA</a></li>
+        </ul>
+    </header>
+
+    <!-- SECTION COM AS IMAGENS PARA PARALLAX -->
+    <section>
+        <img src="midia/stars.png" id="stars">
+        <img src="midia/moon.png" id="moon">
+        <img src="midia/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Consumindo API's</h2>
+        <a href="#sec" id="btn">Sobre</a>
+        <img src="midia/mountains_front.png" id="mountains_front">
+    </section>
+
+    <div class="sec" id="sec">
+
+        <!-- PARAGRAFO COM EXPLICAÇÕES -->
+        <p>As APIs são um conjunto de padrões que fazem parte de uma interface. As APIs permitem a criação de
+            plataformas de maneira mais simples e prática para desenvolvedores. A partir de APIs, é possível criar
+            softwares, aplicativos, programas e plataformas diversas. Por exemplo, apps desenvolvidos para celulares
+            Android e iPhone (iOS) são criados a partir de padrões definidos e disponibilizados pelas APIs de cada
+            sistema operacional. Em 2020, o Google a Apple anunciaram que trabalhariam juntos para desenvolver uma API
+            que rastreasse o contágio da Covid-19 a partir dos celulares. Mas, afinal, o que é uma API? Confira, na
+            lista abaixo, cinco perguntas e respostas sobre APIs e solucione dúvidas sobre a interface.
+        </p>
+        <br><br>
+
+        <H2>O QUE É API E COMO FUNCIONA?</H2>
+        <br>
+        <p>A sigla API deriva da expressão inglesa Application Programming Interface que, traduzida para o português,
+            pode ser compreendida como uma interface de programação de aplicação. Ou seja, API é um conjunto de normas
+            que possibilita a comunicação entre plataformas por meio de uma série de padrões e protocolos. Por meio de
+            APIs, desenvolvedores podem criar novos softwares e aplicativos capazes de se comunicar com outras
+            plataformas. Por exemplo: caso um desenvolvedor queira criar um aplicativo de fotos para Android, ele poderá
+            ter acesso à câmera do celular através da API do sistema operacional, sem ter a necessidade de criar uma
+            nova interface de câmera do zero. O mesmo acontece com aplicativos que utilizam os serviços de mapas por
+            meio da API do Google Maps ou, ainda, nas integrações entre apps, como o Spotify e o Instagram, que
+            possibilita compartilhar faixas nos Stories.
+        </p>
+        <br><br>
+
+        <H2>QUAL A FUÇÃO DE UMA API?</H2>
+        <br>
+        <p>A função de uma API é, basicamente, facilitar e simplificar o trabalho de desenvolvedores, além de oferecer
+            um padrão para a criação de novas plataformas. Com o uso das APIs, não é necessário criar códigos
+            personalizados para cada função que um programa for executar, o que simplifica a criação de novos
+            aplicativos, softwares e plataformas em geral. Além disso, as APIs também possuem papel fundamental quando o
+            assunto é segurança, já que também são capazes de bloquear acesso e permissões a dados de software e
+            hardware que algumas aplicações não podem usar.
+        </p>
+        <br><br>
+
+        <H2>EXEMPLOS DE API</H2>
+        <br>
+        <p>As APIs estão presentes na maioria dos aplicativos que utilizamos no nosso dia a dia. No WhatsApp, por
+            exemplo, podemos perceber a integração da lista de contatos salva no dispositivo com os contatos do
+            aplicativo. No Facebook, temos a integração com o Instagram, que permite que fotos postadas no aplicativo
+            também sejam postadas automaticamente no Facebook. Também podemos observar o uso das APIs quando realizamos
+            compras online, já que a plataforma utilizada para pagamentos — em que colocamos as informações de cartões
+            de crédito — deve ser integrada à operadora do cartão, que pode ou não autorizar a compra. Esses são alguns
+            exemplos de APIs mais comuns, que podemos perceber no nosso cotidiano, e que facilitam a comunicação entre
+            plataformas.
+        </p>
+        <br><br>
+
+        <H2>O QUE É API NO MERCADO FINANCEIRO?</H2>
+        <br>
+        <p>As APIs também podem ser utilizadas para a comunicação entre serviços e, no mercado financeiro, elas
+            funcionam por meio do sistema de Open Banking. A solução de Open Banking é simples e promete mudar o sistema
+            financeiro, já que as informações de consumidores estariam disponíveis em uma base de dados padronizada
+            capaz de se comunicar com outras instituições, o que seria possível através de APIs. Com o Open Banking,
+            seria mais fácil realizar a portabilidade de dados de um cliente que deseja migrar para outro banco, por
+            exemplo.
+        </p>
+        <br><br>
+    </div>
+
+    <!-- EFEITO PARALLAX -->
+    <script>
+        let stars = document.getElementById("stars");
+        let moon = document.getElementById("moon");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let mountains_front = document.getElementById("mountains_front");
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>
